@@ -66,7 +66,10 @@ export default function App() {
                 (response) => setData(response.data),
                 setItem(""),
                 setChanges(changes + 1)
-            );
+            )
+            .catch((error) => {
+                console.log(error);
+            });
     }
     function handleDelete(id) {
         axios
@@ -77,7 +80,10 @@ export default function App() {
                 (response) => setData(response.data),
                 setItem(""),
                 setChanges(changes + 1)
-            );
+            )
+            .catch((error) => {
+                console.log(error);
+            });
     }
     function handlePending(id, pending) {
         axios
@@ -89,6 +95,9 @@ export default function App() {
                 (response) => setData(response.data),
                 setItem(""),
                 setChanges(changes + 1)
-            );
+            )
+            .catch((error) => {
+                console.log(error);
+            });
     }
 }
