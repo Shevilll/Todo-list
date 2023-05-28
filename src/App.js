@@ -20,7 +20,7 @@ export default function App() {
     );
     return (
         <>
-            <div>
+            <div className="input">
                 <form>
                     <input
                         placeholder="Add Todo"
@@ -31,7 +31,7 @@ export default function App() {
                 </form>
             </div>
             {data.map((item, index) => (
-                <div key={index}>
+                <div key={index} className="main">
                     <h1
                         style={
                             item.pending
