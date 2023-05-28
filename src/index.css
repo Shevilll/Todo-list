@@ -2,3 +2,58 @@
 * {
     font-family: "Pangolin", cursive;
 }
+body {
+    font-size: 3vw;
+    background-color: darkviolet;
+}
+input {
+    font-size: 4vw;
+    margin: 2px;
+    width: 80vw;
+    text-align: center;
+}
+.input {
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    font-size: 4vw;
+    border: 2px solid black;
+    margin: 2px;
+}
+button:hover {
+    border-color: wheat;
+}
+button:active {
+    background-color: cornsilk;
+}
+.main {
+    border: 2px solid black;
+    margin: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: hotpink;
+}
+@media (max-width: 400px) {
+    body {
+        font-size: 2vw;
+    }
+    button {
+        font-size: 3vw;
+    }
+    input {
+        font-size: 3vw;
+    }
+}
+@media (max-width: 320px) {
+    body {
+        font-size: 2vw;
+    }
+    button {
+        font-size: 3vw;
+    }
+    input {
+        font-size: 3vw;
+        width: 70vw;
+    }
+}
